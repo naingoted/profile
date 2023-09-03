@@ -24,8 +24,8 @@ export function useSectionInView(sectionName: SectionName, threshold = 0.75) {
 
 export function useScreenSize(): { width: number; height: number } {
   const [screenSize, setScreenSize] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
+    width: 0,
+    height: 0,
   });
 
   useEffect(() => {
@@ -37,7 +37,7 @@ export function useScreenSize(): { width: number; height: number } {
     };
 
     window.addEventListener("resize", handleResize);
-
+    handleResize();
     // Clean up the event listener when the component unmounts
     return () => {
       window.removeEventListener("resize", handleResize);
