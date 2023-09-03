@@ -63,8 +63,8 @@ export const experiencesData = [
   {
     title: "Software Engineer - Shopback",
     location: "Singapore",
-    description: "Worked as Individual Contributor for merchant platforms.",
-    icon: React.createElement(FaReact),
+    description: "Worked as Individual Contributor for merchant platforms team",
+    icon: React.createElement(CgWorkAlt),
     date: " 2021 - 2023 ",
   },
 ] as const;
@@ -81,7 +81,16 @@ export const projectsData = [
     title: "AsiaOne",
     description:
       "News aggregator platform. Migrated monolith into micro-service architecture to support web and mobile apps.",
-    tags: ["Next.js", "SCSS", "Drupal", "PHP", "MySQL", "AWS", "Node.js"],
+    tags: [
+      "Next.js",
+      "MobX",
+      "SCSS",
+      "Drupal",
+      "PHP",
+      "MySQL",
+      "AWS",
+      "Node.js",
+    ],
     imageUrl: asiaone,
   },
   {
@@ -110,14 +119,17 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
+  "Problem Solving",
+  "Communication",
   "JavaScript",
   "TypeScript",
   "React",
+  "MobX",
   "Next.js",
   "Nest.js",
   "Git",
+  "HTML",
+  "CSS",
   "Tailwind",
   "MongoDB",
   "Redux",

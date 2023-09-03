@@ -1,5 +1,7 @@
+"use client";
+
 import { useActiveSectionContext } from "@/context/active-section-context";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import type { SectionName } from "./types";
 
@@ -18,4 +20,29 @@ export function useSectionInView(sectionName: SectionName, threshold = 0.75) {
   return {
     ref,
   };
+}
+
+export function useScreenSize(): { width: number; height: number } {
+  const [screenSize, setScreenSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  return screenSize;
 }

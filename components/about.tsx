@@ -19,28 +19,29 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        I'm a full stack developer base in Singapore.
-        <span className="font-medium"></span> I decided to pursue my passion for
-        web development after i graduated from Computer Science course back in
-        2015.
-        <span className="italic"> My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
+        I'm a dedicated full-stack developer based in{" "}
+        <span className="font-medium"> Singapore</span>, originally from Myanmar
+        . My journey in the world of web development began after graduating with
+        a degree in Computer Science in 2015. I've had the privilege of
+        collaborating with diverse teams, ranging from agile startups to
+        well-established corporations, each providing a unique learning
+        experience and helped me become an{" "}
+        <span className="font-medium">effective communicator </span> and{" "}
+        <span className="font-medium">problem solver </span>. My core stack
+        includes{" "}
         <span className="font-medium">
-          React, Next.js, Nest.js, and MongoDB
+          React, Next.js, Nest.js, MongoDB and Postgres
         </span>
-        . I am always looking to learn new technologies. I am currently looking
-        for a <span className="font-medium">full-time position</span> as a
+        . I am always looking to learn new technologies. I am aggresivelly
+        seeking a <span className="font-medium">full-time position</span> as a
         software developer.
       </p>
 
       <p>
         <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games. Currently grinding Age of Empire IV. I also enjoy{" "}
-        <span className="font-medium">Outdoor activities</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>.
+        video games or hunting for some comfort food. Currently enjoying Age of
+        Empire IV. I also enjoy{" "}
+        <span className="font-medium">Outdoor activities</span>.
       </p>
     </motion.section>
   );
