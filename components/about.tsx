@@ -38,10 +38,11 @@ export default function About() {
       </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games or hunting for some comfort food. Currently enjoying Age of
-        Empire IV. I also enjoy{" "}
-        <span className="font-medium">Outdoor activities</span>.
+        <span className="italic">When I'm not coding</span>, I like to enjoy
+        history and philosophy contents, playing RTS games or i'll probably
+        doing some outdoors stuffs. Some of my fav youtube channels are History
+        Buffs, Kraut, Knowing Better, Contra Points and oliSUNvia. And also
+        quite a film buff.
       </p>
     </motion.section>
   );
