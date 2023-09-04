@@ -56,14 +56,15 @@ export const experiencesData = [
     title: "Full-stack - AsiaOne",
     location: "Singapore",
     description:
-      "Started out as Full-stack engineer for this company. Managed a team of 5 engineers before leaving",
+      "Started out as Full-stack engineer to help scale up the platform. Managed a team of 5 engineers before leaving.",
     icon: React.createElement(CgWorkAlt),
     date: " 2019 - 2021 ",
   },
   {
     title: "Software Engineer - Shopback",
     location: "Singapore",
-    description: "Worked as Individual Contributor for merchant platforms team",
+    description:
+      "Worked as Individual Contributor for merchant platforms team.",
     icon: React.createElement(CgWorkAlt),
     date: " 2021 - 2023 ",
   },
@@ -101,15 +102,15 @@ export const projectsData = [
     imageUrl: moovaz,
   },
   {
-    title: "Shopback",
+    title: "Shopback Business",
     description:
-      "Information Platform for shopback merchants. Worked on billing and report generation.",
+      "Information Platform for shopback merchants. Solved scaling issues for billing and report generation.",
     tags: [
       "React",
       "Postgres",
       "MongoDB",
       "Nest.js",
-      "kubernetes",
+      "Kubernetes",
       "gRPC",
       "Knative",
       "AWS",
