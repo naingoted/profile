@@ -19,10 +19,6 @@ export const links = [
     hash: "#about",
   },
   {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
     name: "Skills",
     hash: "#skills",
   },
@@ -38,34 +34,27 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Web developer - Inspiral Creative",
-    location: "Yangon, Myanmar",
-    description: "Worked as web developer for this creative studio.",
-    icon: React.createElement(CgWorkAlt),
-    date: " 2015 - 2017 ",
-  },
-  {
-    title: "Web developer - SPH magazines",
-    location: "Singapore",
+    title: "Business Development Manager",
+    location: "Bangkok, Thailand",
     description:
-      "I worked on CMSs (Workpress, Drupal) and was in charge of 4 magazine titles.",
+      "Brought in more schools for the company and managed teaching talents",
     icon: React.createElement(CgWorkAlt),
-    date: " 2017 - 2019 ",
+    date: " 2017 - 2021",
   },
   {
-    title: "Full-stack - AsiaOne",
-    location: "Singapore",
+    title: "Marketing Manager",
+    location: "Bangkok, Thailand",
     description:
-      "Started out as Full-stack engineer for this company. Managed a team of 5 engineers before leaving",
+      "Started out as Marketing Specialist. Managed a marketing department before being promoted to General Manager",
     icon: React.createElement(CgWorkAlt),
-    date: " 2019 - 2021 ",
+    date: " 2021 - 2023",
   },
   {
-    title: "Software Engineer - Shopback",
-    location: "Singapore",
-    description: "Worked as Individual Contributor for merchant platforms team",
+    title: "General Manager",
+    location: "Bangkok, Thailand",
+    description: "Leading a talented team to bring in more revenue",
     icon: React.createElement(CgWorkAlt),
-    date: " 2021 - 2023 ",
+    date: " 2023 - Present ",
   },
 ] as const;
 
@@ -121,20 +110,9 @@ export const projectsData = [
 export const skillsData = [
   "Problem Solving",
   "Communication",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "MobX",
-  "Next.js",
-  "Nest.js",
-  "Git",
-  "HTML",
-  "CSS",
-  "Tailwind",
-  "MongoDB",
-  "Redux",
-  "Express",
-  "PostgreSQL",
-  "Kubernetes",
-  "DevOps",
+  "Leadership",
+  "Management",
+  "Marketing",
+  "Sales",
+  "Hiring",
 ] as const;
