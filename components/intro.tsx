@@ -10,10 +10,19 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import profile from "@/public/profile.png";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const [text, helper] = useTypewriter({
+    words: [
+      "enjoy crafting digital experiences",
+      "solve web scaling issues",
+      "love exploring the endless web possibilities",
+    ],
+    loop: 1,
+  });
 
   return (
     <section
@@ -63,11 +72,18 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Vincent.</span> I'm a{" "}
+        Hello, I'm <span className="font-bold"> Vincent.</span> I'm a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">8 years</span> of experience. I enjoy
-        building <span className="italic">web apps</span>. I'm currently
-        focusing on <span className="underline">JavaScript stack</span>.
+        <span className="font-bold">8 years</span> of experience. I
+        <div>
+          {text}
+          <Cursor cursorColor="black" />.
+        </div>
+        <div>
+          {" "}
+          I'm currently focusing on{" "}
+          <span className="underline">JavaScript stack</span>.
+        </div>
       </motion.h1>
 
       <motion.div

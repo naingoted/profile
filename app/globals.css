@@ -1,7 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@keyframes blink {
 
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.cursor {
+
+  display: inline-block;
+  width: 10px;
+  /* Adjust the cursor width */
+  height: 18px;
+  /* Adjust the cursor height */
+  background-color: #000;
+  /* Adjust the cursor color */
+  animation: blink 1s infinite;
+  /* Adjust blinking speed if needed */
+}
+  
 html {
   --line-color: #e5e7eb;
 }
