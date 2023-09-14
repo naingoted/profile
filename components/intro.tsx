@@ -75,9 +75,9 @@ export default function Intro() {
         Hello, I'm <span className="font-bold"> Vincent.</span> I'm a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
         <span className="font-bold">8 years</span> of experience. I
-        <div>
+        <div className="dark:text-inherit">
           {text}
-          <Cursor cursorColor="black" />.
+          <Cursor />.
         </div>
         <div>
           {" "}
