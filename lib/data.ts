@@ -1,8 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
+import { BsLightningCharge } from "react-icons/bs";
 import herworld from "@/public/herworld.png";
 import asiaone from "@/public/asiaone.png";
 import moovaz from "@/public/moovaz.png";
@@ -53,7 +51,7 @@ export const experiencesData = [
     date: " 2017 - 2019 ",
   },
   {
-    title: "Full-stack - AsiaOne",
+    title: "Full-stack Lead - AsiaOne",
     location: "Singapore",
     description:
       "Started out as Full-stack engineer to help scale up the platform. Managed a team of 5 engineers before leaving.",
@@ -67,6 +65,13 @@ export const experiencesData = [
       "Worked as Individual Contributor for merchant platforms team.",
     icon: React.createElement(CgWorkAlt),
     date: " 2021 - 2023 ",
+  },
+  {
+    title: "Career Break",
+    location: "Singapore/Bangkok",
+    description: "Taking a break to learn new technologies.",
+    icon: React.createElement(BsLightningCharge),
+    date: "2023 - Current",
   },
 ] as const;
 

@@ -5,11 +5,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
+import { HiOutlineExternalLink } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import profile from "@/public/profile.png";
+import profile from "@/public/profile-image.jpeg";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 export default function Intro() {
@@ -108,11 +108,11 @@ export default function Intro() {
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="/thet-naing-resume.pdf"
+          href="https://docs.google.com/document/d/1WnbsYv2rPuzKBSQ_q78NnmOzdmRbfZdkaUyLzFpc458/edit?usp=sharing"
+          target="_blank"
           download
         >
-          Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          Resume <HiOutlineExternalLink className="opacity-60 transition" />
         </a>
         <div className="flex gap-4">
           <a
